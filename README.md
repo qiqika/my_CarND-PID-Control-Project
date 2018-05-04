@@ -97,7 +97,7 @@ still be compilable with cmake and make./
 A well written README file can enhance your project and portfolio.  Develop your abilities to create professional README files by completing [this free course](https://www.udacity.com/course/writing-readmes--ud777).
 
 ## Rubric Discussion Points
-## Reflection
+# Reflection
 Student describes the effect of the P, I, D component of the PID algorithm in their implementation. Is it what you expected?
 Visual aids are encouraged, i.e. record of a small video of the car in the simulator and describe what each component is set to.
 
