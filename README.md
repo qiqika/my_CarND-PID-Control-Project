@@ -99,11 +99,11 @@ A well written README file can enhance your project and portfolio.  Develop your
 ## Rubric Discussion Points
 ### 1. Describes the effect of the P, I, D component of the PID algorithm in implementation. 
 
-1. For P, it will effect CTE changes directly. In this case, the larger P is, the faster car steer will be changed.[small Kp example](result/small_Kp_0.01_0.0002_3_1.mp4). 
+1. For P, it will effect CTE changes directly and P = Kp * cte (P is proportion , Kp is ratio coefficient, cte is cross track error). In this case, the larger P is, the faster car steer will be changed.[small Kp example](result/small_Kp_0.01_0.0002_3_1.mp4). 
 
-2. For I, it is influence in the accumulate error. It means the small value will make small error dont be corrected  and car will be easy to become overshoot as car goes.[large Ki example](result/final_0.1_0.0002_3_1.mp4)
+2. For I, it is influence in the accumulate error and I += Ki*cte(I is intergal, Ki is ratio coefficient) . It means the small value will make small error dont be corrected  and car will be easy to become overshoot as car goes.[large Ki example](result/final_0.1_0.0002_3_1.mp4)
 
-3. For D, it is about the short time cte change and effect on delay cte change. the large conefficient seems will make control system more unstable. Maybe becuase the specific value is not optimal.[large Kd example](result/big_Kd_0.01_0.2_3_1.mp4)
+3. For D, it is about the short time cte change and effect on delay cte change and D = Kd*(cte_t - cte_(t-1))(D is derivative, Kd is ratio coefficient, cte_t is the t second cte, cte_(t-1) is the t-1 second cte). the large conefficient seems will make control system more unstable. Maybe becuase the specific value is not optimal.[large Kd example](result/big_Kd_0.01_0.2_3_1.mp4)
 
 ### 2. Discusses how P, I, D coefficients chose the final hyperparameters. 
 
