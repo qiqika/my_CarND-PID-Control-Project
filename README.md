@@ -101,11 +101,11 @@ A well written README file can enhance your project and portfolio.  Develop your
 Student describes the effect of the P, I, D component of the PID algorithm in their implementation. Is it what you expected?
 Visual aids are encouraged, i.e. record of a small video of the car in the simulator and describe what each component is set to.
 
-The P will effect CTE changes directly. In this case, the larger P is, the faster car steer will be changed.[small Kp example](https://github.com/qiqika/my_CarND-PID-Control-Project/result/small_Kp_0.01_0.0002_3_1.mp4). 
+The P will effect CTE changes directly. In this case, the larger P is, the faster car steer will be changed.[small Kp example](result/small_Kp_0.01_0.0002_3_1.mp4). 
 
-The I is influence in the accumulate error. It means the small value will make small error dont be corrected  and car will be easy to become overshoot as car goes.[large Ki example](https://github.com/qiqika/my_CarND-PID-Control-Project/result/final_0.1_0.0002_3_1.mp4)
+The I is influence in the accumulate error. It means the small value will make small error dont be corrected  and car will be easy to become overshoot as car goes.[large Ki example](result/final_0.1_0.0002_3_1.mp4)
 
-The D is about the short time cte change and effect on delay cte change. the large conefficient seems will make control system more unstable. Maybe becuase the specific value is not optimal.[large Kd example](https://github.com/qiqika/my_CarND-PID-Control-Project/result/big_Kd_0.01_0.2_3_1.mp4)
+The D is about the short time cte change and effect on delay cte change. the large conefficient seems will make control system more unstable. Maybe becuase the specific value is not optimal.[large Kd example](result/big_Kd_0.01_0.2_3_1.mp4)
 
 Student discusses how they chose the final hyperparameters (P, I, D coefficients). This could be have been done through 
 manual tuning, twiddle, SGD, or something else, or a combination!
