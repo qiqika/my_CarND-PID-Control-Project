@@ -98,17 +98,17 @@ A well written README file can enhance your project and portfolio.  Develop your
 
 ## Rubric Discussion Points
 ### Reflection
-#### describes the effect of the P, I, D component of the PID algorithm in their implementation. 
+#### Describes the effect of the P, I, D component of the PID algorithm in implementation. 
 
-The P will effect CTE changes directly. In this case, the larger P is, the faster car steer will be changed.[small Kp example](result/small_Kp_0.01_0.0002_3_1.mp4). 
+1. For P, it will effect CTE changes directly. In this case, the larger P is, the faster car steer will be changed.[small Kp example](result/small_Kp_0.01_0.0002_3_1.mp4). 
 
-The I is influence in the accumulate error. It means the small value will make small error dont be corrected  and car will be easy to become overshoot as car goes.[large Ki example](result/final_0.1_0.0002_3_1.mp4)
+2. For I, it is influence in the accumulate error. It means the small value will make small error dont be corrected  and car will be easy to become overshoot as car goes.[large Ki example](result/final_0.1_0.0002_3_1.mp4)
 
-The D is about the short time cte change and effect on delay cte change. the large conefficient seems will make control system more unstable. Maybe becuase the specific value is not optimal.[large Kd example](result/big_Kd_0.01_0.2_3_1.mp4)
+3. For D, it is about the short time cte change and effect on delay cte change. the large conefficient seems will make control system more unstable. Maybe becuase the specific value is not optimal.[large Kd example](result/big_Kd_0.01_0.2_3_1.mp4)
 
-#### discusses how they chose the final hyperparameters (P, I, D coefficients). 
+#### Discusses how P, I, D coefficients chose the final hyperparameters. 
 
-i just manually tune parameters and find that is not easy to get the final result. the small or large Kp is not very effect on cte change. the big value of Kd will make car run in cycle way. the large Ki is good for stay in good balance. 
+I just manually tune parameters and find that is not easy to get the final result. the small or large Kp is not very effect on cte change. the big value of Kd will make car run in cycle way. the large Ki is good for stay in good balance. 
 
 
 
