@@ -103,11 +103,11 @@ Visual aids are encouraged, i.e. record of a small video of the car in the simul
 Student discusses how they chose the final hyperparameters (P, I, D coefficients). This could be have been done through 
 manual tuning, twiddle, SGD, or something else, or a combination!
 
-The P will effect CTE change rate directly. In this case, the larger P is, the faster car steer will be changed.[small Kp](result/small_Kp_0.01_0.0002_3_1.mp4). 
+The P will effect CTE change rate directly. In this case, the larger P is, the faster car steer will be changed.[small Kp example](https://github.com/qiqika/my_CarND-PID-Control-Project/result/small_Kp_0.01_0.0002_3_1.mp4). 
 
-The I is influent in the accumulate error. It means the small parameter will make car error dont be corrected  and car will become overshoot as car goes.
+The I is influent in the accumulate error. It means the small parameter will make car error dont be corrected  and car will become overshoot as car goes.[large Ki example](https://github.com/qiqika/my_CarND-PID-Control-Project/result/final_0.1_0.0002_3_1.mp4)
 
-The D is about the short time cte change and can effect cte change delay. the large conefficient seems will make control system more unstable. Maybe becuase the specific value is not optimal.
+The D is about the short time cte change and can effect cte change delay. the large conefficient seems will make control system more unstable. Maybe becuase the specific value is not optimal.[large Kd example](https://github.com/qiqika/my_CarND-PID-Control-Project/result/big_Kd_0.01_0.2_3_1.mp4)
 
 
 
