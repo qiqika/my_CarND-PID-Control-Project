@@ -97,8 +97,7 @@ still be compilable with cmake and make./
 A well written README file can enhance your project and portfolio.  Develop your abilities to create professional README files by completing [this free course](https://www.udacity.com/course/writing-readmes--ud777).
 
 ## Rubric Discussion Points
-### Reflection
-#### Describes the effect of the P, I, D component of the PID algorithm in implementation. 
+### 1. Describes the effect of the P, I, D component of the PID algorithm in implementation. 
 
 1. For P, it will effect CTE changes directly. In this case, the larger P is, the faster car steer will be changed.[small Kp example](result/small_Kp_0.01_0.0002_3_1.mp4). 
 
@@ -106,7 +105,7 @@ A well written README file can enhance your project and portfolio.  Develop your
 
 3. For D, it is about the short time cte change and effect on delay cte change. the large conefficient seems will make control system more unstable. Maybe becuase the specific value is not optimal.[large Kd example](result/big_Kd_0.01_0.2_3_1.mp4)
 
-#### Discusses how P, I, D coefficients chose the final hyperparameters. 
+### 2. Discusses how P, I, D coefficients chose the final hyperparameters. 
 
 I just manually tune parameters and find that is not easy to get the final result. the small or large Kp is not very effect on cte change. the big value of Kd will make car run in cycle way. the large Ki is good for stay in good balance. 
 
