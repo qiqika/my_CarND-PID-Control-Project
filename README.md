@@ -100,16 +100,17 @@ A well written README file can enhance your project and portfolio.  Develop your
 ### Reflection
 Student describes the effect of the P, I, D component of the PID algorithm in their implementation. Is it what you expected?
 Visual aids are encouraged, i.e. record of a small video of the car in the simulator and describe what each component is set to.
-
-The P will effect CTE change rate directly. In this case, the larger P is, the faster car steer will be changed.   
-
-The I is influent in the accumulate error. It means the small parameter will make car error dont be corrected  and car will become overshoot as car goes.
-
-The D is about the short time steer change. the large conefficient seems will make control system more unstable. Maybe becuase the specific value is not optimal.
-
 Student discusses how they chose the final hyperparameters (P, I, D coefficients). This could be have been done through 
 manual tuning, twiddle, SGD, or something else, or a combination!
 
-I just try change value by hand.
+The P will effect CTE change rate directly. In this case, the larger P is, the faster car steer will be changed.[small Kp](result/small_Kp_0.01_0.0002_3_1.mp4). 
+
+The I is influent in the accumulate error. It means the small parameter will make car error dont be corrected  and car will become overshoot as car goes.
+
+The D is about the short time cte change and can effect cte change delay. the large conefficient seems will make control system more unstable. Maybe becuase the specific value is not optimal.
+
+
+
+
 
 
